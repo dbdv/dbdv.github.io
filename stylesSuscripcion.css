@@ -1,0 +1,185 @@
+body{
+    background-color: #34495e;
+}
+
+div.cabecera {
+    height: 140px;
+    min-width: 100vw;
+    position: fixed;
+    background-color: #34495e;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: 100vw;
+    place-items: center;
+}
+
+div.cabecera img {
+    width: 480px;
+    height: 80.4975px;
+    /*float: left;*/
+    opacity: 95%;
+    padding: 0;
+    margin: 0;
+}
+
+div.cabecera img:hover {
+    border: 1px solid #34495e;
+    opacity: 100%;
+}
+
+/*
+
+div.cabecera h1{
+    padding: 0;
+    margin: 0;
+}
+
+div.cabecera h1 a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+}
+
+div.cabecera h1 a:hover {
+    color: black;
+}
+
+div.cabecera h1 a:visited {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: 50;
+    padding: 0;
+    float: left;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+*/
+
+div.cabecera{
+    float: left;
+    position: fixed;
+}
+
+div.cabecera ul{
+    
+    list-style-type: none;
+    background-color: #627583;
+    overflow: hidden;
+    min-width: 100vh;
+    place-items: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+div.cabecera li {
+    
+    display: inline;
+    float: left;
+    border: 1px solid #a9bf5a;
+    background-color: #a9bf5a;
+}
+
+div.cabecera li a:hover {
+    background-color: white;
+    color: black;
+}
+
+div.cabecera li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: darkslategray;
+    border: solid 3px 1px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    margin: 0;
+    display: block;
+}
+
+
+div.zonaFormulario{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    border: 4px solid #a9bf5a;
+    padding: 20px;
+    margin-top: 140px;
+    width: 60vw;
+    background-color: white;
+}
+
+div.zonaFormulario input[type=text]{
+    width: 100%;
+    padding: 8px;
+    margin: 4px;
+    box-sizing: border-box;
+    border: 2px solid #a9bf5a;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+div.zonaFormulario input[type=text]:focus{
+    background-color: white;
+}
+
+div.zonaFormulario input[type=email]{
+    width: 100%;
+    padding: 8px;
+    margin: 4px;
+    box-sizing: border-box;
+    border: 2px solid #a9bf5a;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+div.zonaFormulario input[type=email]:focus{
+    background-color: white;
+}
+
+div.zonaFormulario textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: 4px solid #a9bf5a;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+div.pie {
+    min-width: 15vw;
+    position: relative;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    place-items: center;
+    margin: 15px;
+}
+
+a.contacto {
+    color: darkslategray;
+    font-weight: bold;
+    border: 3px 1px solid #a9bf5a;
+    background-color: #a9bf5a;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0;
+    
+
+} 
+
+a.contacto:hover {
+    background-color: white;
+    color: black;
+}

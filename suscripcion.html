@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagenes/dianaLogo31.png">
+    <link rel="stylesheet" href="stylesSuscripcion.css">
+    <title>Suscripción</title>
+
+    <script>
+        function validar(){
+            
+            //validando campo nombre y apellido
+            var nombre = document.formulario.nombre.value.trim();
+            if(!nombre || nombre.length < 7){
+                alert("Debe ingresar un nombre y apellido.");
+                return false;
+            }
+
+            //validando campo email
+            var mail = document.formulario.mail.value;
+            if(mail.length < 8){
+                alert("Debe ingresar un correo válido");
+                return false;
+            }
+
+            //validando radio de regularidad
+            var cont = 0;
+            var regularidad = document.formulario.regularidad;
+
+            for(i = 0; i < regularidad.length; i++){
+                if(regularidad[i].checked){
+                    cont++;
+                }
+            }
+
+            if(cont == 0){
+                alert("Debe elegir la regularidad");
+                return false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="cabecera">
+        <a href="index.html"><img src="imagenes/logoTextBlanco.png" class="logo"></a>
+       <!-- <h1><a href="index.html">Animal Curiosity</a></h1>-->
+        <ul>
+            <li><a href="datoDelDia.html">Dato del día</a></li>
+            <li><a href="animalSemana.html">Animal de la semana</a></li>
+            <li><a href="">A completar</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="suscripcion.html">Newsletter</a></li>
+        </ul>
+    </div>
+    <div class="zonaFormulario">
+        <form class="formulario" name="formulario" autocomplete="on" method="POST"> <!--agregar el siguiente atributo action="validar.js" -->
+            <label for="nombre">Nombre y apellido:</label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre completo" required autofocus><br>
+
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" name="mail" placeholder="example@mail.com" required><br><br>
+
+            <label>Seleccione la regularidad con la que quiere recibir el newsletter</label><br>
+
+            <input type="radio" id="semanal" name="regularidad">
+            <label for="regularidad">Semanal</label><br>
+
+            <input type="radio" id="quincenal" name="regularidad">
+            <label for="regularidad">Quincenal</label><br>
+
+            <input type="radio" id="mensual" name="regularidad">
+            <label for="regularidad">Mensual</label><br><br>
+
+            <label for="areaTexto">Algún comentario que tenga sobre la página</label><br>
+            <textarea type="text" name="areaTexto" id="areaTexto"></textarea><br><br>
+
+            <input type="submit" id="btSuscribirse" value="Suscribirse" onclick="validar();">
+        </form>
+    </div>
+
+    <div class="pie">
+        <a href="mailto: contacto@animalcuriosity.com" class="contacto">Contáctanos</a>
+    </div>
+</body>
+</html>
