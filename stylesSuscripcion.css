@@ -27,22 +27,6 @@ div.cabecera img:hover {
     border: 1px solid #34495e;
     opacity: 100%;
 }
-/*
-div.cabecera h1{
-    padding: 0;
-    margin: 0;
-}
-
-div.cabecera h1 a{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    
-    font-weight: bold;
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    margin: 0;
-}
 
 div.cabecera h1 a:hover {
     color: black;
@@ -71,21 +55,21 @@ div.cabecera ul{
     list-style-type: none;
     background-color: #34495e;
     overflow: hidden;
-    min-width: 100vh;
-    place-items: center;
+    width: 100vh;
     padding: 0;
     margin: 0 auto;
+    text-align: center;
 }
 
 div.cabecera li {
     
-    display: inline;
-    float: left;
     border: 1px solid #a9bf5a;
     border-radius:28px;
     background-color: #a9bf5a;
     cursor:pointer;
-    margin: 2px;
+    margin: 0 3px;
+    display: inline-block;
+    text-align: center;
 }
 
 div.cabecera li:active{
@@ -105,9 +89,9 @@ div.cabecera li a {
     border: solid 3px 1px;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px;
-    margin: 0;
-    display: block;
+    padding: 6px;
+    margin: 0 auto;
+    display: inline-block;
 }
 
 
